@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+
+/*----------------------Main-------------------------*/
+
+.main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*---- Carousel ----*/
+
+.carousel {
+    width: 100%;
+}
+
+.carousel-caption {
+    bottom: 0;
+    padding-bottom: 0;
+}
+
+.carousel-caption h6,
+.carousel-caption p {
+    font-size: 1vw;
+}
+
+/*-------Grid-------*/
+
+.myGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: .6vw;
+}
+
+.carousel-wrapper {
+    grid-column: 1/3;
+}
+
+.aside-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1vw;
+}
+
+.aside-wrapper img {
+    width: 23%;
+    height: auto;
+}
+
+.aside-wrapper h6 {
+    font-size: 1vw;
+    margin: 0;
+    color: #F5C518;
+}
+
+.aside-wrapper span {
+    color: white;
+    font-size: .9vw;
+    padding-left: 20px;
+}
+
+.aside-wrapper a {
+    text-decoration: none;
+}
+
+.aside-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.aside-wrapper div:nth-child(1n+2) {
+    display: flex;
+}
+
+/*---------------------------------------------------*/
+
+
+
+
+

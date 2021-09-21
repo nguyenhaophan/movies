@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+.main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.myGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 199px);
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: auto;
+    background-color: #383836;
+}
+
+.grid-card img {
+    width: 100%;
+    height: 250px;
+}
+
+.text {
+    color: white;
+    font-size: medium;
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 40px;
+}
+
+.add-btn {
+    display: flex;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-btn svg {
+    margin-right: 10px;
+}
+

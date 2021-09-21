@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+/*-----------------Header----------------*/
+body {
+    background-color: black;
+    font-family: 'Patua One', cursive;
+}
+
+header {
+    min-height: 50px;
+}
+
+.logo {
+    background-color: #F5C518;
+    border-radius: 5px;
+    padding: 5px 7px;
+    color: black !important;
+    font-weight: bold;
+    font-size: medium;
+    margin-right: 0;
+}
+
+.input-group-prepend {
+    z-index: 0;
+}
+
+/* Width for search bar @burger */
+.form-inline {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Width for search bar @full_screen*/
+#search-desktop {
+    width: 100%;
+}
+
+#search-desktop .input-group {
+    width: 96%;
+    padding-left: 40px;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-left: 0px;
+}
+
+.nav-links li {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+}
+
+.nav-links li:nth-child(2) {
+    margin-left: 15px
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.nav-links a:hover {
+    border-radius: 5px;
+    background-color: #828282;
+    padding: 5px 15px;
+}
+
+/*burger menu*/
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/*collapsed buger menu*/
+.dropdown {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.dropdown-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    color: #f1f1f1;
+}
+
+@media all and (max-width: 768px) {
+    .burger-menu {
+        display: inline-block;
+        order: 3;
+    }
+
+    #search-desktop,
+    .nav-links {
+        display: none;
+    }
+}
+
+
+
+
+
+
